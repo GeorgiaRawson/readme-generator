@@ -34,7 +34,7 @@ content = f"""
            ## Licence
            
            
-           {answers}['licence']"""
+           {answers['licence']}"""
 
           
 with open ("README.md", "w") as readme:
