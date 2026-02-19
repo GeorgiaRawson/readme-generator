@@ -1,7 +1,5 @@
-from InquirerPy import prompt
-from questions import ask_questions
-answers = prompt(ask_questions())
-content = f"""
+def markdown_content(anwsers):
+    content = f"""
            # {answers['title']}
            
            ## Description
@@ -24,8 +22,7 @@ content = f"""
            
            {answers['licence']}"""
 
-          
-with open ("README.md", "w") as readme:
-    readme.write(content)
-
-print("README.md has been generated sucessfully!")
+def save_readme (content, filename="README.md"):
+          with open ("README.md", "w") as readme:
+            readme.write(content)
+            
